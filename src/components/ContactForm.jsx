@@ -1,5 +1,5 @@
 const ContactForm = () => (
-  <div className="py-16 bg-white-100">
+  <div className="py-16 bg-white-100" data-aos="fade-up">
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-gray-100 rounded-lg shadow-md p-8">
         {" "}

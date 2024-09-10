@@ -1,5 +1,5 @@
 const About = () => (
-  <div className="py-16 bg-white">
+  <div className="py-16 bg-white" data-aos="fade-up" data-aos-duration="3000">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="bg-white rounded-lg shadow-md p-6 flex flex-col sm:flex-row">
         {" "}

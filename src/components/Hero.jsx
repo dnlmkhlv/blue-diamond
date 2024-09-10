@@ -19,7 +19,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="bg-blue-100 py-10 sm:py-20">
+    <div className="bg-blue-100 py-10 sm:py-20" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col gap-8 sm:flex-row items-center">
           {/* Text content - full width on mobile, half width on tablet and up */}

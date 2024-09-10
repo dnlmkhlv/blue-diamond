@@ -62,7 +62,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="py-16 bg-gray-100">
+    <div className="py-16 bg-gray-100" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-center text-3xl font-bold text-gray-900 mb-8">
           Our Services 💯

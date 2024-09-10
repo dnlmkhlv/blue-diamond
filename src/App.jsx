@@ -1,3 +1,8 @@
+import { useEffect } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,17 +12,27 @@ import ContactForm from "./components/ContactForm";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 
-const App = () => (
-  <div>
-    <Navbar />
-    <Hero />
-    <About />
-    <Services />
-    <Reviews />
-    <ContactForm />
-    <FAQ />
-    <Footer />
-  </div>
-);
+function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      easing: "ease-out-cubic",
+    });
+  }, []);
+
+  return (
+    <div>
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Reviews />
+      <ContactForm />
+      <FAQ />
+      <Footer />
+    </div>
+  );
+}
 
 export default App;
