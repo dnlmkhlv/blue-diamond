@@ -22,7 +22,7 @@ const Reviews = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {reviews.map((review, index) => (
-            <div key={index} className="bg-gray-100 p-6 rounded-lg flex">
+            <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-lg flex">
               <div className="flex-shrink-0 mr-4">
                 {" "}
                 {/* Profile picture container */}
@@ -50,7 +50,7 @@ const Reviews = () => {
                     </svg>
                   ))}
                 </div>
-                <blockquote className="text-gray-600 mb-4 italic border-l-4 border-blue-600 pl-4">
+                <blockquote className="text-gray-600 mb-4 italic border-l-4 border-blue-400 pl-4">
                   {" "}
                   {/* Styled quotation */}
                   {review.text}

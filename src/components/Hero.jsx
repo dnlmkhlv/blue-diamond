@@ -37,7 +37,7 @@ const Hero = () => {
             <p className="text-center sm:text-left text-xl text-gray-500 mb-6 order-3 sm:order-2">
               Repairs, Cleaning, Painting, Transportation, and More!
             </p>
-            <button className="btn btn-primary mx-4 sm:mx-0 sm:w-64 order-4 sm:order-3">
+            <button className="btn btn-gradient mx-4 sm:mx-0 sm:w-64 order-4 sm:order-3">
               Book Now
             </button>
           </div>

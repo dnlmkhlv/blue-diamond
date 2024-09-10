@@ -13,8 +13,8 @@ const Navbar = () => (
           </h1>
         </div>
         <div className="flex items-center gap-2">
-          <button className="btn btn-outline">Sign Up</button>
-          <button className="btn btn-primary">Login</button>
+          <button className="btn btn-gradient-outline">Sign Up</button>
+          <button className="btn btn-gradient">Login</button>
         </div>
       </div>
     </div>

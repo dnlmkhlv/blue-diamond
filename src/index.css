@@ -26,9 +26,23 @@ body {
   @apply hover:bg-primary;
 }
 
-.gradient {
+.btn-gradient {
   @apply bg-gradient-to-r from-sky-300 to-sky-600 text-white border-none;
   @apply hover:from-primary/80 hover:to-secondary/80;
   @apply transition-all duration-300 ease-in-out;
   @apply shadow-md hover:shadow-lg;
+}
+
+.btn-gradient-outline {
+  @apply bg-transparent text-gray-600;
+  @apply border-2 border-transparent;
+  @apply hover:text-white;
+  @apply transition-all duration-300 ease-in-out;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, theme('colors.sky.300'), theme('colors.sky.600'));
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.btn-gradient-outline:hover {
+  background-image: linear-gradient(to right, theme('colors.sky.300'), theme('colors.sky.600')), linear-gradient(to right, theme('colors.sky.300'), theme('colors.sky.600'));
 }
