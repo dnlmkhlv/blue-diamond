@@ -5,7 +5,7 @@ const Navbar = () => (
         <div className="flex-shrink-0 flex items-center">
           <img
             className="h-[80px] w-auto"
-            src="/blue-diamond-logo.svg"
+            src="/bd-logo.png"
             alt="BlueDiamond Logo"
           />
           <h1 className="logo-title text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold text-blue-600 tracking-tight">
