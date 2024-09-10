@@ -24,7 +24,7 @@ const Hero = () => {
         <div className="flex flex-col gap-8 sm:flex-row items-center">
           {/* Text content - full width on mobile, half width on tablet and up */}
           <div className="w-full flex flex-col sm:w-1/2 mb-8 sm:mb-0 order-2 sm:order-1">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+            <h1 className="text-center sm:text-left text-4xl sm:text-5xl font-bold text-gray-900 mb-4 leading-tight">
               {" "}
               {/* Added leading-tight */}
               Your One-Stop Solution for{" "}
@@ -34,7 +34,7 @@ const Hero = () => {
               {/* Added inline-block */}
             </h1>
             {/* Subtitle - below image on mobile, below title on tablet and up */}
-            <p className="text-xl text-gray-500 mb-6 order-3 sm:order-2">
+            <p className="text-center sm:text-left text-xl text-gray-500 mb-6 order-3 sm:order-2">
               Repairs, Cleaning, Painting, Transportation, and More!
             </p>
             <button className="btn btn-primary mx-4 sm:mx-0 sm:w-64 order-4 sm:order-3">
