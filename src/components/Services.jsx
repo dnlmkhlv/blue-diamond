@@ -15,7 +15,7 @@ const Services = () => {
       name: "Cleaning",
       description:
         "Professional cleaning services for homes and offices. We ensure a spotless environment tailored to your needs.",
-      icon: <PaintBucket className="h-6 w-6 text-blue-600 mb-2" />, // Added icon
+      icon: <PaintBucket className="h-6 w-6 text-blue-300 mb-2" />, // Added icon
     },
     {
       name: "Disinfection",
@@ -27,37 +27,37 @@ const Services = () => {
       name: "Painting",
       description:
         "Expert painting services for interior and exterior. We bring your vision to life with quality finishes.",
-      icon: <PaintbrushVertical className="h-6 w-6 text-blue-600 mb-2" />, // Added icon
+      icon: <PaintbrushVertical className="h-6 w-6 text-red-500 mb-2" />, // Added icon
     },
     {
       name: "Transportation",
       description:
         "Reliable transportation services for all your needs. We ensure timely and safe delivery of your items.",
-      icon: <Truck className="h-6 w-6 text-blue-600 mb-2" />, // Added icon
+      icon: <Truck className="h-6 w-6 text-gray-500 mb-2" />, // Added icon
     },
     {
       name: "Home Renovation",
       description:
         "Transform your living space with our expert renovation services, tailored to your style and needs.",
-      icon: <Hammer className="h-6 w-6 text-blue-600 mb-2" />, // New icon
+      icon: <Hammer className="h-6 w-6 text-gray-900 mb-2" />, // New icon
     },
     {
       name: "Gardening",
       description:
         "Professional gardening services to enhance your outdoor space, including landscaping and maintenance.",
-      icon: <Leaf className="h-6 w-6 text-blue-600 mb-2" />, // New icon
+      icon: <Leaf className="h-6 w-6 text-green-500 mb-2" />, // New icon
     },
     {
       name: "Electrical Services",
       description:
         "Reliable electrical services for installations, repairs, and maintenance to keep your home safe and efficient.",
-      icon: <Zap className="h-6 w-6 text-blue-600 mb-2" />, // New icon
+      icon: <Zap className="h-6 w-6 text-yellow-300 mb-2" />, // New icon
     },
     {
       name: "Pest Control",
       description:
         "Effective pest control solutions to protect your home from unwanted guests, ensuring a safe environment.",
-      icon: <Bug className="h-6 w-6 text-blue-600 mb-2" />, // New icon
+      icon: <Bug className="h-6 w-6 text-red-800 mb-2" />, // New icon
     },
   ];
 
