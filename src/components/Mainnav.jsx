@@ -1,78 +1,59 @@
 import { NavLink } from "react-router-dom";
 import {
-    HiOutlineSquares2X2,
+  HiOutlineSquares2X2,
   HiOutlineCalendarDays,
-  HiOutlineHomeModern,
-  HiOutlineUsers,
   HiOutlineCog6Tooth,
 } from "react-icons/hi2";
 
-function Mainnav() {
+function Mainnav({ onCloseSidebar }) {
+  const handleClick = () => {
+    if (window.innerWidth < 1024) { // Only close sidebar on mobile
+      onCloseSidebar();
+    }
+  };
+
   return (
-    <nav>
-      <ul className="flex flex-col gap-2"> {/* Replaced NavList */}
+    <nav className="p-4">
+      <ul className="flex flex-col gap-2">
         <li>
           <NavLink
-            to="/dashboard"
+            to="/app/dashboard"
             className={({ isActive }) =>
               `flex items-center gap-3 text-gray-600 text-lg font-medium p-3 transition-all ${
-                isActive ? "text-gray-800 bg-gray-50 rounded-sm" : ""
+                isActive ? "text-sky-400 bg-sky-50 rounded-sm" : ""
               }`
             }
+            onClick={handleClick}
           >
-            <HiOutlineSquares2X2 className="w-6 h-6 text-gray-400 transition-all" />
-            <span>Home</span>
+            <HiOutlineSquares2X2 className="w-6 h-6 text-blue-400 transition-all" />
+            <span>Dashboard</span>
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/bookings"
+            to="/app/book-service"
             className={({ isActive }) =>
               `flex items-center gap-3 text-gray-600 text-lg font-medium p-3 transition-all ${
-                isActive ? "text-gray-800 bg-gray-50 rounded-sm" : ""
+                isActive ? "text-sky-600 bg-sky-100 rounded-sm" : ""
               }`
             }
+            onClick={handleClick}
           >
-            <HiOutlineCalendarDays className="w-6 h-6 text-gray-400 transition-all" />
-            <span>Bookings</span>
+            <HiOutlineCalendarDays className="w-6 h-6 text-blue-600 transition-all" />
+            <span>Book a service</span>
           </NavLink>
         </li>
         <li>
           <NavLink
-            to="/cabins"
+            to="/app/settings"
             className={({ isActive }) =>
               `flex items-center gap-3 text-gray-600 text-lg font-medium p-3 transition-all ${
-                isActive ? "text-gray-800 bg-gray-50 rounded-sm" : ""
+                isActive ? "text-sky-800 bg-sky-200 rounded-sm" : ""
               }`
             }
+            onClick={handleClick}
           >
-            <HiOutlineHomeModern className="w-6 h-6 text-gray-400 transition-all" />
-            <span>Cabins</span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/users"
-            className={({ isActive }) =>
-              `flex items-center gap-3 text-gray-600 text-lg font-medium p-3 transition-all ${
-                isActive ? "text-gray-800 bg-gray-50 rounded-sm" : ""
-              }`
-            }
-          >
-            <HiOutlineUsers className="w-6 h-6 text-gray-400 transition-all" />
-            <span>Users</span>
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            to="/settings"
-            className={({ isActive }) =>
-              `flex items-center gap-3 text-gray-600 text-lg font-medium p-3 transition-all ${
-                isActive ? "text-gray-800 bg-gray-50 rounded-sm" : ""
-              }`
-            }
-          >
-            <HiOutlineCog6Tooth className="w-6 h-6 text-gray-400 transition-all" />
+            <HiOutlineCog6Tooth className="w-6 h-6 text-blue-800 transition-all" />
             <span>Settings</span>
           </NavLink>
         </li>

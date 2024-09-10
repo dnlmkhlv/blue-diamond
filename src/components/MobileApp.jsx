@@ -21,7 +21,7 @@ function MobileApp() {
               <div className="camera"></div>
               <div className="display">
                 <div className="artboard artboard-demo phone-1">
-                  <img src="/img/iphone-app.jpg" alt="Mobile App" className="w-full h-full object-cover" />
+                  <img src="/img/mobile-app.jpg" alt="Mobile App" className="w-full h-full object-cover" />
                 </div>
               </div>
             </div>

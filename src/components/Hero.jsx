@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   const [currentImage, setCurrentImage] = useState(0);
   const images = [
     "/img/building-cleaning.jpg",
@@ -37,7 +39,10 @@ const Hero = () => {
             <p className="text-center sm:text-left text-xl text-gray-500 mb-6 order-3 sm:order-2">
               Repairs, Cleaning, Painting, Transportation, and More!
             </p>
-            <button className="btn btn-gradient mx-4 sm:mx-0 sm:w-64 order-4 sm:order-3">
+            <button 
+              className="btn btn-gradient mx-4 sm:mx-0 sm:w-64 order-4 sm:order-3"
+              onClick={() => navigate("/app")}
+            >
               Book Now
             </button>
           </div>

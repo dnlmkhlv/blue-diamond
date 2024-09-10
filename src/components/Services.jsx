@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
   PaintbrushVertical,
   Truck,
@@ -10,6 +12,8 @@ import {
 } from "lucide-react";
 
 const Services = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       name: "Cleaning",
@@ -76,7 +80,7 @@ const Services = () => {
               {service.icon} {/* Render the icon */}
               <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
               <p className="text-gray-600">{service.description}</p>
-              <button className="btn btn-gradient mt-4 w-full text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700">
+              <button className="btn btn-gradient mt-4 w-full text-white font-bold py-2 px-4 rounded-full hover:bg-blue-700" onClick={() => navigate("/app/book-service")}>
                 {" "}
                 {/* Button styling */}
                 Book Now <span className="ml-1">→</span> {/* Arrow icon */}
