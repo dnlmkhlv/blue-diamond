@@ -1,16 +1,11 @@
 import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Services from "./components/Services";
-import Reviews from "./components/Reviews";
-import ContactForm from "./components/ContactForm";
-import FAQ from "./components/FAQ";
-import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import AppLayout from "./pages/AppLayout";
 
 function App() {
   useEffect(() => {
@@ -22,16 +17,12 @@ function App() {
   }, []);
 
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Reviews />
-      <ContactForm />
-      <FAQ />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="app" element={<AppLayout />} />
+      </Routes>
+    </Router>
   );
 }
 
