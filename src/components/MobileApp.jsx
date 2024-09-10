@@ -3,7 +3,7 @@ function MobileApp() {
       <div className="mb-32 p-2 bg-gray-50 rounded-lg shadow-lg max-w-4xl mx-auto" data-aos="fade-up">
         <div className="flex flex-col md:flex-row items-center gap-1">
           <div className="flex flex-col items-center text-center md:text-left space-y-6 w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800">Download Our App 📱</h2>
+            <h2 className="text-3xl font-bold text-gray-800"><span className="text-blue-500">Download</span> Our App 📱</h2>
             <p className="text-lg text-gray-600">
               Manage your booking with ease from your phone
             </p>

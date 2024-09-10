@@ -18,27 +18,27 @@ const Footer = () => (
           <p className="text-sm m-1">Your trusted partner for all services.</p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
+          <h3 className="text-lg font-semibold mb-4 underline decoration-blue-500 decoration-wavy">Contact Us</h3>
           <p className="text-sm">Dubai, United Arab Emirates</p>
           <p className="text-sm">Phone: (123) 456-7890</p>
           <p className="text-sm">Email: info@bluediamond.com</p>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+          <h3 className="text-lg font-semibold mb-4 underline decoration-blue-500 decoration-wavy">Follow Us</h3>
           <div className="flex space-x-4">
             <a href="#" className="text-white hover:text-blue-400">
               <Facebook size={24} />
             </a>
             <a href="#" className="text-white hover:text-blue-400">
-              <Twitter size={24} />
+              <Instagram size={24} />
             </a>
             <a href="#" className="text-white hover:text-blue-400">
-              <Instagram size={24} />
+              <Twitter size={24} />
             </a>
           </div>
         </div>
         <div>
-          <h3 className="text-lg font-semibold mb-4">Services</h3>
+          <h3 className="text-lg font-semibold mb-4 underline decoration-blue-500 decoration-wavy">Services</h3>
           <div className="flex flex-col gap-2">
             <a href="#" className="text-white hover:text-blue-400">
               Cleaning
